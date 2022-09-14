@@ -9,9 +9,9 @@ export const HomeScreen = ({ navigation }: Props) => {
 
   return (
     <View style={styles.container}>
-      <NavigationButton title="PublicApi" navigation={navigation}/>
+      <NavigationButton title="Public Api" navigation={navigation}/>
       <NavigationButton title="Redux" navigation={navigation}/>
-      <NavigationButton title="GreatDesign" navigation={navigation}/>
+      <NavigationButton title="Great Design" navigation={navigation}/>
     </View>
   )
 }

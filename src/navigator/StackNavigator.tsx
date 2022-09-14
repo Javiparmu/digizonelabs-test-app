@@ -17,9 +17,10 @@ export const StackNavigator = () => {
     return (
             <Stack.Navigator
                 screenOptions={{
-                    headerStyle: {
-                        elevation: 0,
-                        shadowColor: 'transparent',
+                    headerTitleAlign: 'center',
+                    headerTitleStyle: {
+                        fontSize: 26,
+                        marginBottom: 25,
                     },
                     cardStyle: {
                         backgroundColor: '#ececea',
@@ -27,7 +28,7 @@ export const StackNavigator = () => {
                 }}
             >
                 <Stack.Screen name='Home' component={HomeScreen} />
-                <Stack.Screen name='PublicApi' component={PublicApiScreen} />
+                <Stack.Screen name='PublicApi' component={PublicApiScreen} options={{ title: 'Public Api' }} />
                 <Stack.Screen name='Redux' component={ReduxScreen} />
                 <Stack.Screen name='GreatDesign' component={GreatDesignScreen} />
             </Stack.Navigator>

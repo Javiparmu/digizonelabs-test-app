@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet } from 'react-native'
 import React from 'react'
 import { Button } from 'react-native-elements'
 import { StackNavigationProp } from '@react-navigation/stack'
@@ -20,7 +20,7 @@ export const NavigationButton = ({ title, navigation }: NavigationButton) => {
                 title={title}
                 type='outline'
                 raised
-                onPress={() => navigateTo(title)}
+                onPress={() => navigateTo(title.replace(/\s/g, ''))}
                 containerStyle={styles.buttonContainer}
                 buttonStyle={styles.button}
             />

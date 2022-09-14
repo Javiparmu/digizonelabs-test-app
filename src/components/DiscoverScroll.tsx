@@ -1,4 +1,4 @@
-import { StyleSheet, ScrollView } from 'react-native'
+import { StyleSheet, ScrollView, View } from 'react-native'
 import React from 'react'
 import { imageUrls } from '../utils/constants'
 import { DiscoverImages } from './DiscoverImages'
@@ -9,10 +9,12 @@ export const DiscoverScroll = () => {
     return (
         <>
             <Text h3 style={styles.title}>DISCOVER</Text>
-            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={{ marginBottom: 40 }}>
+            <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
                 {
-                    imageUrls.map((image, index) => (
-                        <DiscoverImages key={index} imageUrl={image} />
+                    imageUrls.map(({imageUrl, title}, index) => (
+                        <View key={index}>
+                            <DiscoverImages imageUrl={imageUrl} title={title} />
+                        </View>
                     ))
                 }
             </ScrollView>
@@ -29,5 +31,5 @@ const styles = StyleSheet.create({
         marginLeft: 20,
         marginBottom: 10,
         alignSelf: 'flex-start',
-      },
+    }
 })

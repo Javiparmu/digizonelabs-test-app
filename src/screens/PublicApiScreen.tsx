@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Text, StyleSheet, ScrollView, ImageBackground, Dimensions } from 'react-native';
+import { Text, StyleSheet, ScrollView, Dimensions } from 'react-native';
 import { Card } from 'react-native-elements'
 import { useAppDispatch } from '../hooks';
 import { setAnimals } from '../store/animals/animalSlice';

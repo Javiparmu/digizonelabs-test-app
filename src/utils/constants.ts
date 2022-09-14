@@ -1,9 +1,24 @@
 export const imageUrls = [
-    'https://images.unsplash.com/photo-1572727004231-72c211d8fb94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9zJTIwYW5nZWxlcyUyMHdhbGxwYXBlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
-    'https://r1.ilikewallpaper.net/iphone-12-pro-max-wallpapers/download-113941/Hawaii-Volcano-Eruption-2018-Cave.jpg',
-    'https://images.unsplash.com/photo-1541292426587-b6ca8230532b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
-    'https://images.unsplash.com/photo-1592743263126-bb241ee76ac7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80',
-    'https://images.unsplash.com/photo-1608159477202-8a0e27f807b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1572727004231-72c211d8fb94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9zJTIwYW5nZWxlcyUyMHdhbGxwYXBlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+        title: 'Los Angeles',
+    },
+    {
+        imageUrl: 'https://r1.ilikewallpaper.net/iphone-12-pro-max-wallpapers/download-113941/Hawaii-Volcano-Eruption-2018-Cave.jpg',
+        title: 'Hawaii',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1541292426587-b6ca8230532b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+        title: 'Islas Fiji',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1592743263126-bb241ee76ac7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80',
+        title: 'Nueva York',
+    },
+    {
+        imageUrl: 'https://images.unsplash.com/photo-1528114039593-4366cc08227d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+        title: 'Florencia',
+    },
 ];
 
 export const avatarUrls = [

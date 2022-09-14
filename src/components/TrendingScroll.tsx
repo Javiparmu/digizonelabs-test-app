@@ -1,6 +1,6 @@
-import { ScrollView, StyleSheet, View } from 'react-native'
+import { ScrollView, StyleSheet } from 'react-native'
 import React from 'react'
-import { Image, Text } from 'react-native-elements'
+import { Text } from 'react-native-elements'
 import { trendings } from '../utils/constants'
 import { TrendingItem } from './TrendingItem'
 

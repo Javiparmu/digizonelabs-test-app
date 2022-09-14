@@ -10,6 +10,7 @@ interface Props extends StackScreenProps<any, any> { }
 export const GreatDesignScreen = ({ navigation }: Props) => {
 
   const [search, setSearch] = useState('')
+  const [isFavorite, setIsFavorite] = useState(false)
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -20,7 +21,7 @@ export const GreatDesignScreen = ({ navigation }: Props) => {
     })
   }, [navigation])
 
-  const updateSearch = (search: string) => {
+  const updateSearch = (search: string)=> {
     setSearch(search)
   }
 
@@ -30,11 +31,11 @@ export const GreatDesignScreen = ({ navigation }: Props) => {
       <View style={{ alignItems: 'center' }}>
         <Image source={{ uri: 'https://beder.app/wp-content/uploads/2022/05/logo-beder-opt.png' }} onPress={() => navigation.navigate('Home')} style={styles.titleimage} />
       </View>
-      <TouchableOpacity style={styles.icon}>
+      <TouchableOpacity onPress={() => setIsFavorite(!isFavorite)} style={styles.icon} >
         <Icon
-          name='favorite-outline'
+          name={ isFavorite ? 'favorite' : 'favorite-outline'}
           type='material'
-          color='#000'
+          color={ isFavorite ? 'red' : 'black'}
           size={40}
         />
       </TouchableOpacity>
@@ -42,9 +43,10 @@ export const GreatDesignScreen = ({ navigation }: Props) => {
         placeholder="Search for Destinations, People"
         onChangeText={updateSearch}
         value={search}
-        lightTheme
         containerStyle={styles.searchBar}
         inputContainerStyle={styles.searchBarInput}
+        inputStyle={{ paddingLeft: -20 }}
+        searchIcon={<Icon name='search' type='material' color='#A6A6A6' size={20} containerStyle={{ marginLeft: 10, marginRight: -5 }}/>}
       />
       <DiscoverScroll />
       <CommunityScroll />

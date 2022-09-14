@@ -1,4 +1,4 @@
-import { Text, StyleSheet, View } from 'react-native'
+import { Text, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Avatar } from 'react-native-elements'
 
@@ -11,7 +11,7 @@ interface CommunityAvatar {
 export const CommunityAvatar = ({imageUrl, name}: CommunityAvatar) => {
 
     return (
-        <View style={styles.community}>
+        <TouchableOpacity activeOpacity={0.8} style={styles.community}>
             <Avatar
               rounded
               size={100}
@@ -19,7 +19,7 @@ export const CommunityAvatar = ({imageUrl, name}: CommunityAvatar) => {
               containerStyle={styles.communityavatar}
             />
             <Text style={styles.communityname}>{name}</Text>
-          </View>
+          </TouchableOpacity>
     )
 }
 

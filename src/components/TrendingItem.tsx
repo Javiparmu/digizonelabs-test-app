@@ -1,6 +1,6 @@
 import { Text, StyleSheet, View } from 'react-native'
 import React from 'react'
-import { Image } from 'react-native-elements'
+import { Icon, Image } from 'react-native-elements'
 
 
 interface TrendingItem {
@@ -13,6 +13,9 @@ export const TrendingItem = ({ imageUrl, title }: TrendingItem) => {
     return (
         <View>
             <Image source={{ uri: imageUrl }} style={styles.trendingimg} />
+            <View style={styles.playicon}>
+                <Icon name='play-arrow' type='material' size={55} color='white' />
+            </View>
             <View style={styles.trendingtextcontainer}>
                 <Text style={styles.trendingtitle}>{title}</Text>
             </View>
@@ -26,10 +29,10 @@ const styles = StyleSheet.create({
         width: 210,
         height: 250,
         marginHorizontal: 10,
-      },
-      trendingtextcontainer: {
+    },
+    trendingtextcontainer: {
         position: 'absolute',
-        bottom: '18%',
+        bottom: '20%',
         left: '12.5%',
         width: '75%',
         height: 70,
@@ -41,11 +44,20 @@ const styles = StyleSheet.create({
         borderTopRightRadius: 20,
         justifyContent: 'center',
         alignItems: 'center',
-      },
-      trendingtitle: {
+    },
+    trendingtitle: {
         color: '#fff',
         fontSize: 24,
         fontWeight: 'bold',
         textAlign: 'center',
-      }
+    },
+    playicon: {
+        position: 'absolute',
+        top: '15%',
+        left: '34%',
+        backgroundColor: 'rgba(0,0,0,0.3)',
+        borderRadius: 50,
+        padding: 5,
+        zIndex: 1,
+    },
 })
