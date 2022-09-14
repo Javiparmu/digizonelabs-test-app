@@ -11,22 +11,22 @@ Al entrar en la pantalla de Redux sin pasar antes por la de Public Api, no hay d
 
 
 Si entramos en Public Api, nos muestra una Scroll View de Cards con los datos de los animales obtenidos del Api.
-![alt 1](https://res.cloudinary.com/journal-udemy-app/image/upload/c_scale,w_350/v1663164146/DigizoneLabs/tarisqjcentgd1to9cwp.png)
+![alt 1](https://res.cloudinary.com/journal-udemy-app/image/upload/c_scale,w_350/v1663165346/DigizoneLabs/pnltkfb1xj5wd01skmzd.png)
 
 
 Comprobación del scroll.
 
-![alt 1](https://res.cloudinary.com/journal-udemy-app/image/upload/c_scale,w_350/v1663164147/DigizoneLabs/v8igolzgrkbxpbnn14f0.png)
+![alt 1](https://res.cloudinary.com/journal-udemy-app/image/upload/c_scale,w_350/v1663165347/DigizoneLabs/cxpzgcnouxxk2bfs4wjy.png)
 
 
 Si ahora entramos a Redux, vemos que aparece la última información cargada por del Public Api. Esta información viene del store.
 
-![alt 1](https://res.cloudinary.com/journal-udemy-app/image/upload/c_scale,w_350/v1663164501/DigizoneLabs/o7cru485alxoh9fgf33d.png)
+![alt 1](https://res.cloudinary.com/journal-udemy-app/image/upload/c_scale,w_350/v1663165347/DigizoneLabs/p136r3abzykxnwdea39o.png)
 
 
 Comprobamos el scroll y que los animales mostrados son los mismos.
 
-![alt 1](https://res.cloudinary.com/journal-udemy-app/image/upload/c_scale,w_350/v1663164502/DigizoneLabs/ojlr6n6upl1vw4ycdtos.png)
+![alt 1](https://res.cloudinary.com/journal-udemy-app/image/upload/v1663165346/DigizoneLabs/okjji7ends9rbc56ikja.png)
 
 
 Pantalla Great Design con el diseño pedido.
