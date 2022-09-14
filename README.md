@@ -1,5 +1,7 @@
 # Digizone Labs Technical Test
 
+El proyecto se ha realizado en aproximadamente 6 horas, contando documentación y búsqueda de imágenes para el proyecto.
+
 Pantalla de inicio con tres botones para ir a las otras tres pantallas.
 
 ![alt 1](https://res.cloudinary.com/journal-udemy-app/image/upload/c_scale,w_350/v1663164145/DigizoneLabs/gz1vx6dluqyo45ti9wh9.png)
