@@ -26,7 +26,7 @@ Si ahora entramos a Redux, vemos que aparece la última información cargada por
 
 Comprobamos el scroll y que los animales mostrados son los mismos.
 
-![alt 1](https://res.cloudinary.com/journal-udemy-app/image/upload/v1663165346/DigizoneLabs/okjji7ends9rbc56ikja.png)
+![alt 1](https://res.cloudinary.com/journal-udemy-app/image/upload/c_scale,w_350/v1663165346/DigizoneLabs/okjji7ends9rbc56ikja.png)
 
 
 Pantalla Great Design con el diseño pedido.
