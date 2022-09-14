@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
-import { Alert, ScrollView, StyleSheet, Text } from 'react-native'
-import { Card } from 'react-native-elements'
-import { useAppSelector } from '../hooks'
+import React, { useEffect } from 'react';
+import { Alert, ScrollView, StyleSheet, Text } from 'react-native';
+import { Card } from 'react-native-elements';
+import { useAppSelector } from '../hooks';
 
 type animal = {
   name: String,
@@ -11,7 +11,7 @@ type animal = {
 
 export const ReduxScreen = () => {
 
-  const { animals } = useAppSelector(state => state.animal)
+  const { animals } = useAppSelector(state => state.animal);
 
   useEffect(() => {
     if (animals.length === 0) Alert.alert('Error', 'No data found')
@@ -23,7 +23,7 @@ export const ReduxScreen = () => {
           animals &&
           animals?.map((animal: animal, index: number) => {
             return (
-              <Card key={index} containerStyle={{ width: 350 }} >
+              <Card key={index} containerStyle={styles.card} >
                 <Card.Title style={styles.name}>{animal.name}</Card.Title>
                 <Card.Divider />
                 <Card.Image source={{ uri: animal.image_link }} style={styles.image} />
@@ -34,26 +34,26 @@ export const ReduxScreen = () => {
                   {animal.habitat}
                 </Text>
               </Card>
-            )
+            );
           })
         }
     </ScrollView>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
-  bgimage: {
-    flex: 1,
-    justifyContent: "center",
-  },
   container: {
     flex: 1,
+  },
+  card: {
+    width: 350,
+    alignSelf: 'center',
   },
   description: {
     textAlign: 'center',
     fontSize: 16,
     marginVertical: 2,
-    color: '#000000'
+    color: '#000000',
   },
   image: {
     marginBottom: 10,
@@ -65,6 +65,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   name: {
-    fontSize: 18,
+    fontSize: 20,
   }
 })

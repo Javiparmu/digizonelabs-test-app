@@ -1,5 +1,5 @@
-import { StyleSheet, TouchableOpacity, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, TouchableOpacity, View } from 'react-native';
+import React from 'react';
 import { Icon, Image, Text } from 'react-native-elements';
 
 
@@ -11,19 +11,18 @@ interface DiscoverImage {
 export const DiscoverImages = ({ imageUrl, title }: DiscoverImage) => {
 
     return (
-        <View style={{ height: 270 }}>
+        <View style={{ height: 270 }} >
             <View style={styles.playicon}>
-                <Icon name='play-arrow' type='material' size={55} color='white' />
+                <Icon name="play-arrow" type="material" size={55} color="white" tvParallaxProperties={undefined} />
             </View>
             <View style={styles.titlecontainer}>
                 <Text style={styles.title}>{title}</Text>
             </View>
             <TouchableOpacity activeOpacity={0.9} style={styles.infoicon} >
-                <Icon name='info' type='feather' size={35} color='white' />
+                <Icon name="info" type="feather" size={35} color="white" tvParallaxProperties={undefined} />
             </TouchableOpacity>
             <Image source={{ uri: imageUrl }} style={styles.image} >
-                <View style={styles.innerframe}>
-                </View>
+                <View style={styles.innerframe} />
             </Image>
         </View>
     )

@@ -23,6 +23,7 @@ export const NavigationButton = ({ title, navigation }: NavigationButton) => {
                 onPress={() => navigateTo(title.replace(/\s/g, ''))}
                 containerStyle={styles.buttonContainer}
                 buttonStyle={styles.button}
+                titleStyle={{ fontSize: 18 }}
             />
         </>
     )

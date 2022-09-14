@@ -1,6 +1,6 @@
-import { StackScreenProps } from '@react-navigation/stack'
-import React from 'react'
-import { StyleSheet, View } from 'react-native'
+import { StackScreenProps } from '@react-navigation/stack';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
 import { NavigationButton } from '../components';
 
 interface Props extends StackScreenProps<any, any>{}
@@ -13,8 +13,8 @@ export const HomeScreen = ({ navigation }: Props) => {
       <NavigationButton title="Redux" navigation={navigation}/>
       <NavigationButton title="Great Design" navigation={navigation}/>
     </View>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-})
+});
